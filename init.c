@@ -2,7 +2,6 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <accctrl.h>
 
 int main()
 {
