@@ -24,22 +24,6 @@ void Get_Name(); // hàm khởi tạo tên sinh viên
 
 int main()
 {	
-// 	struct Student_Information *person; // khai báo biến con trỏ 
-// 	int i,n;
-// 	printf("enter the number of persons: ");
-// 	scanf("%d",&n);
-// 	person= (struct Student_Information*) malloc(n * sizeof(struct Student_Information));
-// 	   for(i = 1; i <= n; i++)
-//    {
-//        	printf("Enter name of student %d: ",i);
-//        	scanf("%s", (person+i)->Name);
-// 		printf("Enter class of %s: ",(person+i)->Name);
-// 		scanf("%s", (person+i)->Class);
-//    }
-//    		printf("\nDisplaying Information:\n");
-//       	for(i = 1; i <= n; i++)
-//        	printf("Name: %s\tClass: %s\n", (person+i)->Name,(person+i)->Class);
-
 	Get_Name();
 
    return 0;
