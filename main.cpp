@@ -57,7 +57,7 @@ void Menu()
 {
 	printf("-------------- CHOOSE YOUR OPTION---------------------\n");
 	printf("******************************************************\n");
-    printf("**            0. Exit                               **\n");
+   	printf("**            0. Exit                               **\n");
 	printf("**            1. Add students                       **\n");
 	printf("**            2. delete students                    **\n");
 	printf("**            3. Find students                      **\n");
@@ -225,7 +225,7 @@ void Find_Student_ID()
     printf("Result:\n");
     while (currentNode != NULL) 
     {
-        if (Search_info_ID==currentNode->Info.ID) // The strcmp function is used to compare 2 strings.  
+        if (Search_info_ID==currentNode->Info.ID)   
         {
             count++;
             printf("%d.\t%s", ++count, currentNode->Info.Name);
@@ -268,18 +268,3 @@ long long Create_ID( Node* current_ref)
     return ID;
 }
 
-
-char* get_last_name(char *name) {
-    char *tokens[MAX_CHAR_INFO]; // mảng lưu các chuỗi kí tự tách được
-    char *space = " "; // kí tự phân cách các chuỗi kí tự trong tên
-
-    int i = 0;
-    char *token = strtok(name, space); // tách chuỗi đầu tiên trong tên
-    while (token != NULL && token!=space ) {
-        tokens[i++] = token; // lưu chuỗi vào mảng
-        token = strtok(NULL, space); // tiếp tục tách chuỗi kế tiếp
-    }
-
-    char *last_name = tokens[i-1]; // lấy chuỗi cuối cùng trong mảng
-    return last_name;
-}
